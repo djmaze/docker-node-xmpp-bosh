@@ -1,0 +1,3 @@
+[submodule "node-xmpp-bosh"]
+	path = node-xmpp-bosh
+	url = https://github.com/dhruvbird/node-xmpp-bosh.git
