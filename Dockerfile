@@ -1,5 +1,4 @@
-FROM google/nodejs
-MAINTAINER Franz Abzieher <franz@abzieher.net>
+FROM armhfbuild/node
 
 WORKDIR /app
 COPY node-xmpp-bosh/package.json /app/
@@ -7,5 +6,4 @@ RUN npm install
 COPY node-xmpp-bosh/. /app
 
 EXPOSE 5280
-CMD []
-ENTRYPOINT ["/nodejs/bin/npm", "start"]
+CMD ["npm", "start"]
