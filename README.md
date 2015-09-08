@@ -1,13 +1,15 @@
-# XMPP BOSH Gateway for Docker
+# XMPP BOSH Gateway for Docker (armhf version)
 
 Just a basic Dockerfile to use dhruvbird's BOSH gateway written for node.js. This Dockerfile uses Google's base node.js docker image.
+
+_This is the version for armhf devices._
 
 
 ## Build
 
     git submodule init
     git submodule update
-    docker build -t franzabzieher/node-xmpp-bosh .
+    make
 
 ## Run 
-    docker run --name node-xmpp-bosh -d -p 5280:5280 franzabzieher/node-xmpp-bosh
+    docker run --name node-xmpp-bosh -d -p 5280:5280 armhfbuild/node-xmpp-bosh
